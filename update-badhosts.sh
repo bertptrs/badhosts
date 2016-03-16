@@ -2,9 +2,9 @@
 
 temp=`mktemp`
 dir=`dirname $0`
-badhosts="${dir}/badhosts"
+badhosts=badhosts
 
-echo $badhosts $temp $dir
+cd "$dir"
 
 cp "$badhosts" "$temp"
 
